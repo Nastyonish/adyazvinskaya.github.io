@@ -1,18 +1,17 @@
 #content {
     max-width: 700px;
     width: 100%;
-    margin: 0 auto; 
+    margin: 0 auto;
+    font-family: "Muli";
 }
 
-header {
+header, footer {
     text-align: center;
     background-color: #36ba8e;
-    border-radius: 7.5px 7.5px 0px 0px;
+    border-radius: 7.5px;
 }
-footer {
-    text-align: center;
-    background-color: #36ba8e;
-    border-radius: 0px 0px 7.5px 7.5px;
+header {
+    font-family: "Sigmar One";
 }
 
 li {
@@ -22,27 +21,37 @@ li {
 }
 
 main {
-    margin-top: -20px;
-    display: flex;
-    flex-flow: row, wrap;
+    margin: -10px 0px 10px 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
 }
 
 section {
     display: flex;
     flex-flow: column;
-    text-align: center;
-    padding: 20px 10px;
+    padding: 0px 5px 20px 5px;
+    border-radius: 7.5px;
 }
 
-#first-section, #third-section {
-    background-color: #b9a6bc;
+h3 {
+    text-align: center;
+}
+
+#first-section {
+    background-color: #fddabd;
+    grid-column: span 1;
 }
 #second-section {
     background-color: #e2d3ad;
+    grid-column: span 1;
+}
+#third-section {
+    background-color: #b9a6bc;
+    grid-column: span 1;
 }
 
 img {
-    margin: 0 auto;
     max-width: 100%;
     float: right;
     border-radius: 10px;

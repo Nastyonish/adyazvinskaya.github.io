@@ -2,11 +2,13 @@
     max-width: 700px;
     width: 80%;
     margin: 0 auto; 
+    font-family: "Muli";
 }
 
 header {
     background-color: #36ba8e;
     border-radius: 7.5px;
+    font-family: "Sigmar One";
 }
 
 footer {
