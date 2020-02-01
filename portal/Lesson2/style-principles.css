@@ -1,5 +1,5 @@
 #content {
-    max-width: 700px;
+    max-width: 900px;
     width: 100%;
     margin: 0 auto;
     font-family: "Muli";
@@ -14,13 +14,8 @@ header {
     font-family: "Sigmar One";
 }
 
-li {
-    text-align: left;
-    list-style-type: none;
-}
-
 main {
-    margin: -10px 0px 10px 10px;
+    margin: -10px 10px 10px 10px;
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 10px;
@@ -39,21 +34,48 @@ h3 {
 
 #first-section {
     background-color: #fddabd;
-    grid-column: span 1;
+    grid-column: span 4;
 }
 #second-section {
-    background-color: #e2d3ad;
-    grid-column: span 1;
+    background-color: #cd92a4;
+    grid-column: span 4;
 }
 #third-section {
     background-color: #b9a6bc;
-    grid-column: span 1;
+    grid-column: span 4;
 }
 
 img {
     max-width: 100%;
-    float: right;
+    margin: 15px auto;
     border-radius: 10px;
     box-shadow: 0 0 20px #242525;
 }
 
+@media only screen and (min-width: 750px) {
+    #first-section {
+        grid-column: span 1;
+    }
+    #second-section {
+        grid-column: span 1;
+    }
+    #third-section {
+        grid-column: span 1;
+    }
+
+    main {
+        margin: -10px -20px 10px 10px ;
+    }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 750px) {
+    #first-section {
+        grid-column: span 2;
+    }
+    #second-section {
+        grid-column: span 2;
+    }
+    #third-section {
+        grid-column: span 4;
+    }
+}
