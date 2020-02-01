@@ -92,3 +92,27 @@ a:active {
 p {
     padding-left: 30px;
 }
+
+@media screen and (min-width: 300px) {
+    content {
+        margin: 0;
+    }
+
+    nav {
+        text-align: center;
+        width: 100%;
+        background-color: #a1bae4;
+        border-radius: 7.7px;
+        margin-top: -20px;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav li a{
+        display: block;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}
