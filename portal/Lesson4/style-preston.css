@@ -9,7 +9,7 @@
 header {
     background-color: #5772a0;
     border-radius: 7.5px 7.5px 0 0;
-    padding: 0 0 25px 10px;
+    padding: 0 10px 25px 30px;
 }
 #name {
     display: flex;
@@ -25,7 +25,7 @@ header {
 h1 {
     font-family: "Bangers";
     color: #450716;
-    font-size: 50px;
+    font-size: 40px;
 }
 h2 {
     color: #883346;
@@ -89,9 +89,10 @@ main {
 }
 
 img {
-    max-width: 200px;
+    max-width: 100px;
     height: auto;
     margin-right: 10px;
+    float: left;
 }
 
 table, th, td {
@@ -135,5 +136,13 @@ p {
     }
     nav button {
         display: none;
+    }
+}
+@media screen and (min-width: 400px) {
+    img {
+        max-width: 200px;
+    }
+    h1 {
+        font-size: 50px;
     }
 }
