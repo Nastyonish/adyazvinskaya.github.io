@@ -142,6 +142,10 @@ p {
     nav button {
         display: none;
     }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
     main, footer {
         margin: 0 50px
     }
