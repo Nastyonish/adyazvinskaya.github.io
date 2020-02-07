@@ -1,5 +1,4 @@
 #content {
-    max-width: 900px;
     width: 100%;
     margin: 0 auto; 
     font-family: "Dosis";
@@ -8,7 +7,6 @@
 
 header {
     background-color: #5772a0;
-    border-radius: 7.5px 7.5px 0 0;
     padding: 0 10px 25px 30px;
 }
 #name {
@@ -72,13 +70,13 @@ nav ul.hide {
 footer {
     text-align: center;
     background-color: #5772a0;
-    border-radius: 0 0 7.5px 7.5px;
+    margin: 0 50px;
 }
 
 main {
     padding: 10px 30px;
-    background-color: #fff39b;
     margin-top: -16px;
+    margin: 20px 50px 0 50px;
 }
 
 .placeholder {
