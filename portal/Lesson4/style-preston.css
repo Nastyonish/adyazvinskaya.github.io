@@ -41,18 +41,6 @@ li {
 }
 
 nav {
-    text-align: center;
-    width: 100%;
-    background-color: #a1bae4;
-    margin-top: -16px;
-}
-nav li a {
-    display: block;
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav {
 	background-color: #a1bae4;
 	text-align: center;
 }
@@ -91,13 +79,11 @@ nav ul.hide {
 footer {
     text-align: center;
     background-color: #5772a0;
-    margin: 0 50px;
 }
 
 main {
     padding: 10px 30px;
     margin-top: -16px;
-    margin: 20px 50px 0 50px;
 }
 
 .placeholder {
@@ -155,6 +141,9 @@ p {
     }
     nav button {
         display: none;
+    }
+    main, footer {
+        margin: 0 50px
     }
 }
 @media screen and (min-width: 400px) {
