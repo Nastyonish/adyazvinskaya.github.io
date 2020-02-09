@@ -191,7 +191,7 @@ a:active {
     display: block;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
     nav ul.hide {
         display: flex;
         flex-direction: row;
@@ -211,7 +211,7 @@ a:active {
     }
 
     main, footer {
-        margin: 0 50px
+        margin: 0 100px
     }
 
     table {
@@ -238,6 +238,7 @@ a:active {
     }
     #map {
         width: 250px;
+        padding-right: 15px;
     }
 }
 @media screen and (min-width: 400px) {
