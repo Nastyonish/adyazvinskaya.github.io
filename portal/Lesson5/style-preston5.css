@@ -67,6 +67,10 @@ nav ul li a {
 nav a:hover {
 	background-color: #b3afda;
 }
+nav a:active {
+    background-color: #b3afda;
+    color: #000000;
+}
 nav button {
     border: none;
     background-color: transparent;
@@ -114,9 +118,6 @@ main {
     margin-bottom: -10px;
 }
 
-#contacts {
-    
-}
 .placeholder4 #map {
     display: none;
 }
@@ -167,12 +168,6 @@ td {
 a {
     color: #000;
     font-weight: bolder;
-}
-a:hover {
-    color: #000000;
-}
-a:active {
-    color: #000000;
 }
 
 #banner {
