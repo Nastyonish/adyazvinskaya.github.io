@@ -86,6 +86,7 @@ nav ul.hide {
 footer {
     text-align: center;
     background-color: #5772a0;
+    font-weight: bolder;
 }
 
 main {
@@ -114,7 +115,7 @@ main {
 }
 
 #contacts {
-    margin: 0 30px;
+    
 }
 .placeholder4 #map {
     display: none;
@@ -164,8 +165,8 @@ td {
 }
 
 a {
-    color: #31040f;
-    font-weight: bold;
+    color: #000;
+    font-weight: bolder;
 }
 a:hover {
     color: #000000;
@@ -181,6 +182,13 @@ a:active {
 #festival {
     width: 270px;
     padding: 5px;
+}
+
+.banner {
+    text-align: center;
+    background-color: #fff72f;
+    padding: 10px 20px;
+    display: block;
 }
 
 @media screen and (min-width: 600px) {
@@ -203,7 +211,7 @@ a:active {
     }
 
     main, footer {
-        margin: 0 200px
+        margin: 0 50px
     }
 
     table {
@@ -227,6 +235,9 @@ a:active {
     #festival {
         float: right;
         width: auto;
+    }
+    #map {
+        width: 250px;
     }
 }
 @media screen and (min-width: 400px) {
