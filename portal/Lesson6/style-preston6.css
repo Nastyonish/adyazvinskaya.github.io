@@ -64,17 +64,20 @@ nav ul li a {
 	text-align: center;
 	padding: 0.75rem;
 	text-decoration: none;
-	font-size: 0.95rem;
+	font-size: 1.2rem;
 }
 nav li:first-child {
     display: block;
   }
-nav a:hover {
-	background-color: #b3afda;
+nav ul li a:hover {
+	background-color: #5772a0;
 }
-nav a:active {
-    background-color: #b3afda;
+nav ul li a:active {
+    background-color: #5772a0;
     color: #000000;
+}
+#preston {
+    background-color: #5772a0;
 }
 nav button {
     border: none;
