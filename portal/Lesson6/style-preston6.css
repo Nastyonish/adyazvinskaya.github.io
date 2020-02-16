@@ -96,7 +96,11 @@ footer {
     text-align: center;
     background-color: #5772a0;
     font-weight: bolder;
-    color: #d4d28c;
+    color: #ffffff;
+}
+
+header a, footer a, #headings h4 {
+    color: #ffffff;
 }
 
 main {
