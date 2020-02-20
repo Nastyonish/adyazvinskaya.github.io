@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "description" content = "Weather Side for Anastasiya Yazvinskaya in CIT 230: Web frontend Development at Brigham Young University - Idaho">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>LazyLoad</title>
+        <link rel = "stylesheet" href = "../../normalize.css">
+        <link rel = "stylesheet" href = "lazyload.css">
+    </head>
+    <body>
+        <div id = "content">
+            <main>
+                <a href = "../../index.html">Back to Portal</a>
+                <h1>Progressive Loading of Images</h1>
+                <picture>
+                    <img src = "images-lazyload/placeholder-300x400.jpeg" data-src = "images-lazyload/bird.jpg" alt = "bird">
+                </picture>
+                <picture>
+                    <img src = "images-lazyload/placeholder-300x400.jpeg" data-src = "images-lazyload/elephant.jpg" alt = "elephant">
+                </picture>
+                <picture>
+                    <img src = "images-lazyload/placeholder-300x400.jpeg" data-src = "images-lazyload/giraffe.jpg" alt = "giraffe">
+                </picture>
+                <picture>
+                    <img src = "images-lazyload/placeholder-300x400.jpeg" data-src = "images-lazyload/monkey.jpg" alt = "monkey">
+                </picture>
+                <picture>
+                    <img src = "images-lazyload/placeholder-300x400.jpeg" data-src = "images-lazyload/parrot.jpg" alt = "parrot">
+                </picture>
+                <picture>
+                    <img src = "images-lazyload/placeholder-300x400.jpeg" data-src = "images-lazyload/lion.jpg" alt = "lion">
+                </picture>
+            </main>
+            <footer>
+                &copy; 2020 | Anastasiya Yazvinskaya | Russia, Novorossiysk | <a href = "https://www.byui.edu/online">BYUI Online Learning</a>
+                <br>
+                Last modified: <span id = "lastModified"></span>
+            </footer>
+        </div>
+
+        <script src = "lazyload.js"></script>
+    </body>
+</html>

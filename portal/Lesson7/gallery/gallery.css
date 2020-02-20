@@ -40,10 +40,6 @@ header h4 {
     margin-top: -35px;
 }
 
-.placeholder4 p {
-    display: flex;
-}
-
 li {
     list-style-type: none;
     font-weight: bold;
@@ -99,7 +95,7 @@ footer {
     text-align: center;
     background-color: #5772a0;
     font-weight: bolder;
-    color: #ffffff;
+    color: #f1efef;
 }
 
 header a, footer a, #headings h4 {
@@ -111,90 +107,13 @@ main {
     margin-top: -16px;
 }
 
-.placeholder, .placeholder2, .placeholder3, .placeholder4 {
-    display: block;
-    margin: 10px auto;
-    padding: 15px;
-    position: relative;
-}
-.placeholder2 {
-    display: none;
-}
-.placeholder3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #eef7fc;
-}
-.placeholder4 {
-    background-color: #bce2f7;
-    margin-bottom: -10px;
-}
-
-.placeholder4 #map {
-    display: none;
-}
-
-.summary {
-    position: absolute;
-    top: 25px;
-    left: 50px;
-    background-color: #171a78;
-    color: #ffffff;
-    border: 1px solid #000000;
-    padding: 1.2rem;
-    opacity: .9;
-}
-.summary h3, .summary p {
-    text-align: center;
-    margin: 0;
-}
-
-#name img {
-    margin-right: 10px;
-    float: left;
-}
 picture img {
     width: 100%;
-}
-
-table, th, td {
-	border:1px solid #333;
-	border-collapse: collapse;
-	padding: 5px;
-}
-
-th {
-	font-weight: 700;
-	font-size: 15px;
-	background-color: #eee;
-}
-
-td {
-	background-color: #bed;
-	font-size: 13px;
-	text-align: center;
 }
 
 a {
     color: #000;
     font-weight: bolder;
-}
-
-#banner {
-    width: 100%;
-    height: auto;
-}
-#festival {
-    width: 250px;
-    padding: 5px;
-}
-
-.banner {
-    text-align: center;
-    background-color: #fff72f;
-    padding: 10px 20px;
-    display: block;
 }
 
 @media screen and (min-width: 800px) {
@@ -219,38 +138,9 @@ a {
     main, footer {
         margin: 0 100px
     }
-
-    table {
-        margin: 0 auto;
-    }
-
-    .placeholder2, .placeholder4 #map {
-        display: block;
-    }
-
-    .placeholder3 {
-        display: block;
-
-    }
-    .placeholder4 {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    #festival {
-        float: right;
-    }
-    #map {
-        width: 250px;
-        padding-right: 15px;
-    }
 }
 @media screen and (min-width: 400px) {
     h1 {
         font-size: 50px;
-    }
-    #festival {
-        width: 320px;
     }
 }
