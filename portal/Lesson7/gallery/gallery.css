@@ -137,6 +137,24 @@ figcaption {
 }
 
 @media screen and (min-width: 1150px) {
+    nav ul.hide {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: -5px;
+    }
+    nav li a{
+        display: block;
+        text-align: center;
+        padding-left: 15px;
+    }
+    nav button {
+        display: none;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+    
     main, footer {
         margin: 0 5%;
     }
