@@ -1,0 +1,52 @@
+/*
+main {
+    margin: 0 5%;
+}
+*/
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+figure {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    margin: 10px auto;
+    max-width: 350px;
+}
+figure:hover {
+    box-shadow: 0 0 20px #808080;
+}
+figcaption {
+    padding: 5px 10px;
+}
+#gallery img {
+    height: auto;
+    max-width: 300px;
+    filter: blur(0em);
+    transition: filter 0.5s;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#gallery img[data-src] {
+    filter: blur(0.2em);
+}
+
+@media screen and (min-width: 1150px) {
+    main, footer {
+        margin: 0 5%;
+    }
+    figure {
+        box-shadow: 0 0 20px #808080;
+    }
+    #gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 1150px) {
+    #gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

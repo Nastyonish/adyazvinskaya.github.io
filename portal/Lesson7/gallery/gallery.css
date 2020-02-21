@@ -62,9 +62,6 @@ nav ul li a {
 	text-decoration: none;
 	font-size: 1.2rem;
 }
-nav li:first-child {
-    display: block;
-  }
 nav ul li a:hover {
 	background-color: #5772a0;
 }
@@ -83,6 +80,10 @@ nav button {
 }
 nav ul.hide {
     display: none;
+}
+a {
+    color: #000;
+    font-weight: bolder;
 }
 
 #clear:after {
@@ -103,44 +104,51 @@ header a, footer a, #headings h4 {
 }
 
 main {
-    padding: 10px 30px;
-    margin-top: -16px;
+    padding: 20px 10px;
 }
 
-picture img {
-    width: 100%;
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+figure {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    margin: 10px auto;
+    max-width: 350px;
+}
+figure:hover {
+    box-shadow: 0 0 20px #808080;
+}
+figcaption {
+    padding: 5px 10px;
+}
+#gallery img {
+    height: auto;
+    max-width: 300px;
+    filter: blur(0em);
+    transition: filter 0.5s;
+    margin: 0 auto;
 }
 
-a {
-    color: #000;
-    font-weight: bolder;
+#gallery img[data-src] {
+    filter: blur(0.2em);
 }
 
-@media screen and (min-width: 800px) {
-    nav ul.hide {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: -5px;
-    }
-    nav li a{
-        display: block;
-        text-align: center;
-        padding-left: 15px;
-    }
-    nav button {
-        display: none;
-    }
-    nav ul li {
-        flex: 1 1 100%;
-    }
-
+@media screen and (min-width: 1150px) {
     main, footer {
-        margin: 0 100px
+        margin: 0 5%;
+    }
+    figure {
+        box-shadow: 0 0 20px #808080;
+    }
+    #gallery {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
-@media screen and (min-width: 400px) {
-    h1 {
-        font-size: 50px;
+@media screen and (min-width: 700px) and (max-width: 1150px) {
+    #gallery {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
