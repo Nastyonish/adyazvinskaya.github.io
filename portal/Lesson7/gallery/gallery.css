@@ -19,7 +19,7 @@ header {
 #headings {
     display: flex;
     flex-direction: column;
-    margin: -20px 0 0 0;
+    margin: -20px 0 0 -30px;
 }
 
 h1 {
@@ -111,14 +111,14 @@ main {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
 }
-figure {
+main figure {
     display: flex;
     flex-flow: column;
     text-align: center;
     margin: 10px auto;
     max-width: 350px;
 }
-figure:hover {
+main figure:hover {
     box-shadow: 0 0 20px #808080;
 }
 figcaption {
@@ -140,7 +140,7 @@ figcaption {
     main, footer {
         margin: 0 5%;
     }
-    figure {
+    main figure {
         box-shadow: 0 0 20px #808080;
     }
     #gallery {
