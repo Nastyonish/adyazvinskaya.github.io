@@ -1,0 +1,153 @@
+/*@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Bangers|Dosis&display=swap');*/
+
+#content {
+    width: 100%;
+    margin: 0 auto; 
+    font-family: "Dosis";
+    font-size: 18px;
+}
+
+header {
+    background-color: #5772a0;
+    padding: 0 10px 25px 30px;
+}
+#name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#headings {
+    display: flex;
+    flex-direction: column;
+    margin: -20px 0 0 0;
+}
+
+h1 {
+    font-family: "Bangers";
+    color: #31040f;
+    font-size: 40px;
+}
+h2 {
+    color: #883346;
+    font-family: "Abril Fatface";
+    font-size: 25px;
+    text-align: center;
+}
+h3, h4, p {
+    margin: 0;
+}
+header h4 {
+    margin-top: -35px;
+}
+
+.placeholder4 p {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    font-weight: bold;
+}
+
+nav {
+	background-color: #a1bae4;
+	text-align: center;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li a {
+	display: block;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+nav li:first-child {
+    display: block;
+  }
+nav ul li a:hover {
+	background-color: #5772a0;
+}
+nav ul li a:active {
+    background-color: #5772a0;
+    color: #000000;
+}
+#activepage {
+    background-color: #5772a0;
+}
+nav button {
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    margin: 20px 0;
+}
+nav ul.hide {
+    display: none;
+}
+
+#clear:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    text-align: center;
+    background-color: #5772a0;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+header a, footer a, #headings h4 {
+    color: #ffffff;
+}
+
+main {
+    padding: 10px 30px;
+}
+
+#name img {
+    margin-right: 10px;
+    float: left;
+}
+
+a {
+    color: #000;
+    font-weight: bolder;
+}
+
+
+
+
+@media screen and (min-width: 800px) {
+    nav ul.hide {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: -5px;
+    }
+    nav li a{
+        display: block;
+        text-align: center;
+        padding-left: 15px;
+    }
+    nav button {
+        display: none;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    main, footer {
+        margin: 0 5%;
+    }
+}
+@media screen and (min-width: 400px) {
+    h1 {
+        font-size: 50px;
+    }
+}

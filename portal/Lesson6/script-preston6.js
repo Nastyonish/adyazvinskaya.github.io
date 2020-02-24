@@ -1,6 +1,8 @@
+// Last Modification
 let lastModif = document.lastModified;
 document.getElementById('lastModified').innerHTML = lastModif;
 
+// Menu
 function Menu() {
     document.getElementById("menu").classList.toggle("hide")
 }
@@ -11,6 +13,7 @@ if(week !== 5) {
     document.getElementById("promo").style.display = "none";
 }
 
+// Wind Chill Calculator
 let temp = parseFloat(document.getElementById("temp").textContent);
 let speed = parseFloat(document.getElementById("speed").textContent);
 
