@@ -40,70 +40,80 @@
             </nav>
             <main>
                 <form action = "thanks/thanks.html" method = "GET">
-                    <label for = "fullName">
-                        Full name: <input type = "text" id = "fullName" name = "fullName" pattern = "[A-Za-z]" minlength = "5">
-                    </label>
-                    <label for ="email">
-                        E-mail: <input type = "email" id = "email" name = "email" placeholder = "email@test.com">
-                    </label>
-                    <label for = "phoneNumber">
-                        Phone number: <input type = "tel" id = "phoneNumber" name = "phoneNumber" placeholder = "###-###-####" required>
-                    </label>
-                    <label for = "zipCode">
-                        Zip code: <input type = "number" id = "zipCode" name = "zipCode" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep" required>
-                    </label>
-                    <label for = "stormDate">
-                        Storm date: <input type = "date" id = "stormDate" name = "stormDate">
-                    </label>
-                    <label for = "stormType">
-                        Storm type: <input id = "stormType" name = "stormType" list = "types">
-                    </label>
-                    <datalist id = "types">
-                        <option value = "Flash Flood"></option>
-                        <option value = "Hail"></option>
-                        <option value = "Hurricane"></option>
-                        <option value = "Thunderstorm"></option>
-                        <option value = "Tornado"></option>
-                    </datalist>
-                    <label for = "stormSeverity">
-                        Storm severity: 
-                        <input type = "range" id = "stormSeverity" name = "stormSeverity" value = "5" min = "1" max = "10" step="1" 
-                            list="severity" 
-                            oninput="StormSeverity(this.value)" onchange="StormSeverity(this.value)"> 
-                        <span id = "stormseverity">5</span>
-                    </label>
-                    <datalist id = "severity">
-                        <option value = "1"></option>
-                        <option value = "2"></option>
-                        <option value = "3"></option>
-                        <option value = "4"></option>
-                        <option value = "5"></option>
-                        <option value = "6"></option>
-                        <option value = "7"></option>
-                        <option value = "8"></option>
-                        <option value = "9"></option>
-                        <option value = "10"></option>
-                    </datalist>
-                    <label for = "stormRegion">
-                        Storm region: 
-                        <select>
-                            <option>Select Region...</option>
-                            <option value = "Preston">Preston</option>
-                            <option value = "SodaSprings">Soda Springs</option>
-                            <option value = "FishHaven">Fish Haven</option>
-                        </select>
-                    </label>
-                    <label>
-                        User in-danger level: <input type = "radio" name = "userindengerlevel" value = "yes">Yes 
-                        <input type = "radio" name = "userindengerlevel" value = "maybe">Maybe 
-                        <input type = "radio" name = "userindengerlevel" value = "no">No
-                    </label>
-                    <label>
-                        Additional information: <textarea name = "addinformation" rows = "10" cols = "50" placeholder = "Type any additional information here..."></textarea>
-                    </label>
-                    <label>
-                        <input type = "submit" value = "Submit">
-                    </label>
+                    <fieldset class = "person">
+                        <legend>Personal Information</legend>
+                        <label for = "fullName">
+                            Full name: <input type = "text" id = "fullName" name = "fullName" pattern = "[A-Za-z]" minlength = "5">
+                        </label>
+                        <label for ="email">
+                            E-mail: <input type = "email" id = "email" name = "email" placeholder = "email@test.com">
+                        </label>
+                        <label for = "phoneNumber">
+                            Phone number*: <input type = "tel" id = "phoneNumber" name = "phoneNumber" placeholder = "###-###-####" required>
+                        </label>
+                        <label for = "zipCode">
+                            Zip code*: <input type = "number" id = "zipCode" name = "zipCode" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep" required>
+                        </label>
+                    </fieldset>
+                    <fieldset class = "storm">
+                        <legend>Storm Information</legend>
+                        <label for = "stormDate">
+                            Storm date: <input type = "date" id = "stormDate" name = "stormDate">
+                        </label>
+                        <label for = "stormType">
+                            Storm type: <input id = "stormType" name = "stormType" list = "types">
+                        </label>
+                        <datalist id = "types">
+                            <option value = "Flash Flood"></option>
+                            <option value = "Hail"></option>
+                            <option value = "Hurricane"></option>
+                            <option value = "Thunderstorm"></option>
+                            <option value = "Tornado"></option>
+                        </datalist>
+                        <label for = "stormSeverity">
+                            Storm severity: 
+                            <input type = "range" id = "stormSeverity" name = "stormSeverity" value = "5" min = "1" max = "10" step="1" 
+                                list="severity" 
+                                oninput="StormSeverity(this.value)" onchange="StormSeverity(this.value)"> 
+                            <span id = "stormseverity">5</span>
+                        </label>
+                        <datalist id = "severity">
+                            <option value = "1"></option>
+                            <option value = "2"></option>
+                            <option value = "3"></option>
+                            <option value = "4"></option>
+                            <option value = "5"></option>
+                            <option value = "6"></option>
+                            <option value = "7"></option>
+                            <option value = "8"></option>
+                            <option value = "9"></option>
+                            <option value = "10"></option>
+                        </datalist>
+                        <label for = "stormRegion">
+                            Storm region: 
+                            <select>
+                                <option>Select Region...</option>
+                                <option value = "Preston">Preston</option>
+                                <option value = "SodaSprings">Soda Springs</option>
+                                <option value = "FishHaven">Fish Haven</option>
+                            </select>
+                        </label>
+                        <label id = "userIn">
+                            <div>
+                                User in-danger level:
+                            </div>
+                            <div>
+                                <input type = "radio" name = "userindengerlevel" value = "yes">Yes 
+                            <input type = "radio" name = "userindengerlevel" value = "maybe">Maybe 
+                            <input type = "radio" name = "userindengerlevel" value = "no">No
+                            </div>
+                        </label>
+                        <label>
+                            Additional information: <br>
+                            <textarea name = "addinformation" rows = "10" placeholder = "Type any additional information here..."></textarea>
+                        </label>
+                    </fieldset>
+                    <input type = "submit" value = "Submit" id = "submit">
                 </form>
             </main>
             <footer>
