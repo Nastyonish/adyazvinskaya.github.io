@@ -6,7 +6,7 @@
 }
 
 table {
-    box-shadow: 5px 10px 8px #403f74;
+    box-shadow: 5px 10px 8px #628ca6;
     margin-top: 10px;
 }
 
@@ -33,5 +33,7 @@ thead th, tfoot {
 thead td, #blueWhite {
     background-color: #628ca6;
     color: #fff;
+}
+thead td {
     font-weight: bold;
 }
