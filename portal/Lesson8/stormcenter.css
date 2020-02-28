@@ -96,14 +96,11 @@ footer {
     background-color: #5772a0;
     font-weight: bolder;
     color: #ffffff;
+    margin-top: 15px;
 }
 
 header a, footer a, #headings h4 {
     color: #ffffff;
-}
-
-main {
-    padding: 10px 30px;
 }
 
 #name img {
@@ -144,7 +141,7 @@ legend {
 }
 
 form {
-    width: 400px;
+    width: 300px;
     margin: 0 auto;
     display: block;
     justify-content: center;
@@ -182,5 +179,11 @@ textarea {
     }
     #userIn {
         flex-direction: row;
+    }
+    main {
+        padding: 10px 30px;
+    }
+    form {
+        width: 400px;
     }
 }
