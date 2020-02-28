@@ -1,5 +1,5 @@
 #content {
-    width: 100%;
+    width: 300px;
     text-align: center;
     margin: 0 auto;
 }
@@ -24,7 +24,7 @@ thead th, tfoot {
     background-color: #7fb9c2;
 }
 
-thead td {
+thead td, #blueWhite {
     background-color: #628ca6;
     color: #fff;
     font-weight: bold;
