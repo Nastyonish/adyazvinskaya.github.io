@@ -2,6 +2,11 @@
     width: 300px;
     text-align: center;
     margin: 0 auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+table {
+    box-shadow: 5px 10px 8px #535353;
 }
 
 table, th, td {
