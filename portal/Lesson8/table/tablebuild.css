@@ -7,6 +7,7 @@
 
 table {
     box-shadow: 5px 10px 8px #535353;
+    margin-top: 10px;
 }
 
 table, th, td {
