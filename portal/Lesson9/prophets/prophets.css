@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+    color: #05554e;
+}
+h2 {
+    color: ;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    box-shadow: 0 0 30px #43ac9a;
+    justify-content: center;
+    background-color: #c9eee8;
+}
+
+section {
+    text-align: center;
+    border: 1px solid #0a9b80;
+    margin: 10px;
+    background-color: #5dc7b5;
+}
+
+img {
+    width: 200px;
+    height: 280px;
+    margin: 10px auto;
+    box-shadow: 0 0 25px #041f1a;
+}
+
+@media screen and (min-width: 800px) {
+    .cards {
+        grid-template-columns: repeat(4, 300px);
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .cards {
+        grid-template-columns: repeat(2, 300px);
+    }
+}
