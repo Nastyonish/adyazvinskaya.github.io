@@ -1,9 +1,18 @@
-h1 {
+body {
+    font-family: 'Neucha';
+}
+
+header {
     text-align: center;
-    color: #05554e;
+}
+
+h1 {
+    color: #132849;
+    font-family: 'Merienda';
 }
 h2 {
-    color: ;
+    color: #132849;
+    font-family: 'Bangers';
 }
 
 .cards {
