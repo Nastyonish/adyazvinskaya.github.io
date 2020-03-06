@@ -34,7 +34,7 @@ img {
     }
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 620px) and (max-width: 1220px) {
     .cards {
         grid-template-columns: repeat(2, 300px);
     }
