@@ -2,8 +2,12 @@ body {
     font-family: 'Neucha';
 }
 
-header {
+header, footer {
     text-align: center;
+}
+
+footer {
+    margin-top: 20px;
 }
 
 h1 {
