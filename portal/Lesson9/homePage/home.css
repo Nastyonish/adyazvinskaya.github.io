@@ -142,13 +142,7 @@ section:hover {
 
 .towns img {
     margin-top: 10px;
-    filter: blur(0em);
-    transition: filter 0.5s;
     max-width: 100%;
-}
-
-.towns img[data-src] {
-    filter: blur(0.2em);
 }
 
 .views {
@@ -185,6 +179,9 @@ section:hover {
 
     .towns {
         grid-template-columns: repeat(3, 300px);
+    }
+    #motto {
+        height: 20px;
     }
     
     .views {

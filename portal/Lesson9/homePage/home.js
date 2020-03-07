@@ -37,8 +37,15 @@ fetch(requestURL)
                 div2.textContent = 'Year Founded: ' + towns[i].yearFounded;
                 div3.textContent = 'Population: ' + towns[i].currentPopulation;
                 div4.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
-                image.setAttribute('src', 'images-home/placeholder.jpeg');
-                image.setAttribute('data-src', towns[i].photo);
+                if (towns[i].name == "Fish Haven") {
+                    image.setAttribute('src', 'images-home/fishHaven.jpg');
+                }
+                else if (towns[i].name == "Preston") {
+                    image.setAttribute('src', 'images-home/preston.jpg');
+                }
+                else if (towns[i].name == "Soda Springs") {
+                    image.setAttribute('src', 'images-home/sodaSprings.jpg');
+                }
                 image.setAttribute('alt', towns[i].name);
 
                 town.appendChild(div0);
@@ -53,36 +60,3 @@ fetch(requestURL)
         }
     }
 });
-
-// Lazyload
-const imagesToLoad = document.querySelectorAll("img[data-src]");
-
-const imgOptions = {
-    threshold: 1,
-    rootMargin: "0px 0px 0px 0px"
-};
-
-const loadImages = (image) => {
-    image.setAttribute('src', image.getAttribute('data-src'));
-    image.onload = () => {image.removeAttribute('data-src');};
-};
-
-if ('IntersectionObserver' in window) {
-    const imgObserver = new IntersectionObserver((items, observer) => {
-        items.forEach((item => {
-            if (item.isIntersecting) {
-                loadImages(item.target)
-                observer.unobserve(item.target)
-            }
-        }))
-    }, imgOptions);
-
-    imagesToLoad.forEach(img => {
-        imgObserver.observe(img);
-    });
-} 
-else {
-    imagesToLoad.forEach(img => {
-        loadImages(img)
-    })
-}

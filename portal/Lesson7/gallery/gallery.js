@@ -20,7 +20,6 @@ const loadImages = (image) => {
     image.onload = () => {image.removeAttribute('data-src');};
 };
 
-
 if ('IntersectionObserver' in window) {
     const imgObserver = new IntersectionObserver((items, observer) => {
         items.forEach((item => {
