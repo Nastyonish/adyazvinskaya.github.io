@@ -1,52 +1,54 @@
-/*
-main {
-    margin: 0 5%;
+body {
+    font-family: 'Neucha';
 }
-*/
 
-#gallery {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-}
-figure {
-    display: flex;
-    flex-flow: column;
+header, footer {
     text-align: center;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+h1 {
+    color: #132849;
+    font-family: 'Merienda';
+}
+h2 {
+    color: #132849;
+    font-family: 'Bangers';
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    box-shadow: 0 0 30px #43ac9a;
+    justify-content: center;
+    background-color: #c9eee8;
+}
+
+section {
+    text-align: center;
+    border: 1px solid #0a9b80;
+    margin: 10px;
+    background-color: #5dc7b5;
+}
+
+img {
+    width: 200px;
+    height: 280px;
     margin: 10px auto;
-    max-width: 350px;
-}
-figure:hover {
-    box-shadow: 0 0 20px #808080;
-}
-figcaption {
-    padding: 5px 10px;
-}
-#gallery img {
-    height: auto;
-    max-width: 300px;
-    filter: blur(0em);
-    transition: filter 0.5s;
-    padding: 10px;
-    margin: 0 auto;
+    box-shadow: 0 0 25px #041f1a;
 }
 
-#gallery img[data-src] {
-    filter: blur(0.2em);
+@media screen and (min-width: 800px) {
+    .cards {
+        grid-template-columns: repeat(4, 300px);
+    }
 }
 
-@media screen and (min-width: 1150px) {
-    main, footer {
-        margin: 0 5%;
-    }
-    figure {
-        box-shadow: 0 0 20px #808080;
-    }
-    #gallery {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-@media screen and (min-width: 700px) and (max-width: 1150px) {
-    #gallery {
-        grid-template-columns: repeat(2, 1fr);
+@media screen and (min-width: 620px) and (max-width: 1220px) {
+    .cards {
+        grid-template-columns: repeat(2, 300px);
     }
 }
