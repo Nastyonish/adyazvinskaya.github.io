@@ -115,7 +115,9 @@ main {
     display: block;
     margin: 10px auto;
     padding: 15px;
-    position: relative;
+}
+.placeholder {
+
 }
 .placeholder2 {
     display: none;
@@ -136,9 +138,7 @@ main {
 }
 
 .summary {
-    position: absolute;
-    top: 25px;
-    left: 50px;
+    justify-content: center;
     background-color: #171a78;
     color: #ffffff;
     border: 1px solid #000000;
@@ -252,5 +252,16 @@ a {
     }
     #festival {
         width: 320px;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .placeholder {
+        position: relative;
+    }
+    .summary {
+        position: absolute;
+        top: 25px;
+        left: 50px;
     }
 }
