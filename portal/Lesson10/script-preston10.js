@@ -31,8 +31,8 @@ let chill =
 document.getElementById("chill").textContent = chill;
 
 //JSON
-const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=404dabd7ee29a75e626eaffed07a7ea7';
-const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=404dabd7ee29a75e626eaffed07a7ea7';
+const apiURL = 'http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=404dabd7ee29a75e626eaffed07a7ea7';
+const forecastUrl = 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=404dabd7ee29a75e626eaffed07a7ea7';
 
 const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
