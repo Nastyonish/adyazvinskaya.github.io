@@ -197,6 +197,13 @@ a {
     display: block;
 }
 
+#promo {
+    text-align: center;
+    font-weight: bold;
+    background-color: #dbaf37;
+    padding: 5px;
+}
+
 @media screen and (min-width: 1024px) {
     nav ul.hide {
         display: flex;
