@@ -204,6 +204,17 @@ a {
     padding: 5px;
 }
 
+.events {
+    width: 300px;
+    border: 10px inset #382bac;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    background-color: #a694e9;
+}
+
 @media screen and (min-width: 1024px) {
     nav ul.hide {
         display: flex;

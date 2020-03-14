@@ -89,7 +89,7 @@ fetch(eventsURL)
         if (towns[i].name == "Preston") {
             let event = document.createElement('section');
             for (let j = 0; j < towns[i].events.length; j++) {
-                let p = documnet.createElement('p');
+                let p = document.createElement('p');
                 p.textContent = towns[i].events[j];
                 event.appendChild(p);
             }
