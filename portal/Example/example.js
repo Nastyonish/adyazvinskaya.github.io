@@ -2,7 +2,7 @@
 let lastModif = document.lastModified;
 document.getElementById('lastModified').innerHTML = lastModif;
 
-//
+// JSON
 const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
 
 fetch(requestURL)
@@ -34,6 +34,8 @@ fetch(requestURL)
       document.querySelector('div.cards').appendChild(card);
     }
   });
+
+document.addEventListener("DOMContentLoaded", );
 
 // Lazyload
 const imagesToLoad = document.querySelectorAll("img[data-src]");

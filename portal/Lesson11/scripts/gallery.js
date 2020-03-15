@@ -1,12 +1,3 @@
-// Last Modifications
-let lastModif = document.lastModified;
-document.getElementById('lastModified').innerHTML = lastModif;
-
-// Menu
-function Menu() {
-    document.getElementById("menu").classList.toggle("hide")
-}
-
 // Lazyload
 const imagesToLoad = document.querySelectorAll("img[data-src]");
 
