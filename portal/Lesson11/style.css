@@ -1,0 +1,418 @@
+#content {
+    width: 100%;
+    margin: 0 auto; 
+    font-family: "Dosis";
+    font-size: 18px;
+}
+
+header {
+    background-color: #5772a0;
+    padding: 0 10px 25px 30px;
+}
+#name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#headings {
+    display: flex;
+    flex-direction: column;
+    margin: -20px 0 0 0;
+}
+
+h1 {
+    font-family: "Bangers";
+    color: #31040f;
+    font-size: 40px;
+}
+h2 {
+    color: #883346;
+    font-family: "Abril Fatface";
+    font-size: 25px;
+    text-align: center;
+}
+h3, h4, p {
+    margin: 0;
+}
+header h4 {
+    margin-top: -35px;
+}
+
+li {
+    list-style-type: none;
+    font-weight: bold;
+}
+
+nav {
+	background-color: #a1bae4;
+	text-align: center;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li a {
+	display: block;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+nav li:first-child {
+    display: block;
+  }
+nav ul li a:hover {
+	background-color: #5772a0;
+}
+nav ul li a:active {
+    background-color: #5772a0;
+    color: #000000;
+}
+#activepage {
+    background-color: #5772a0;
+}
+nav button {
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    margin: 20px 0;
+}
+nav ul.hide {
+    display: none;
+}
+
+#clear:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    text-align: center;
+    background-color: #5772a0;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+header a, footer a, #headings h4 {
+    color: #ffffff;
+}
+
+main {
+    padding: 10px 30px;
+    margin-top: -16px;
+}
+
+#name img {
+    margin-right: 10px;
+    float: left;
+}
+picture img {
+    width: 100%;
+}
+
+a {
+    color: #000;
+    font-weight: bolder;
+}
+
+/* Home Page */
+.towns {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    justify-content: center;
+}
+.towns section {
+    text-align: center;
+    background-color: #ffae77;
+    margin: 10px;
+}
+.towns section:hover {
+    box-shadow: 0 0 30px #8b481c;
+}
+#motto {
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+#town div {
+    padding: 8px;
+}
+.towns img {
+    margin-top: 10px;
+    max-width: 100%;
+}
+.views {
+    text-align: center;
+    background-color: #f6cfb4;
+    width: 300px;
+    margin: 5px auto;
+    border-radius: 7.5px;
+    padding-bottom: 20px;
+}
+
+/* Town Pages */
+.placeholder, .placeholder2, .placeholder3, .placeholder4 {
+    display: block;
+    margin: 10px auto;
+    padding: 15px;
+}
+.placeholder2 {
+    display: none;
+}
+.placeholder3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eef7fc;
+}
+.placeholder4 {
+    background-color: #bce2f7;
+    margin-bottom: -10px;
+}
+.placeholder4 #map {
+    display: none;
+}
+.placeholder4 p {
+    display: flex;
+}
+
+.summary {
+    justify-content: center;
+    background-color: #171a78;
+    color: #ffffff;
+    border: 1px solid #000000;
+    padding: 1.2rem;
+    opacity: .9;
+}
+.summary h3, .summary p {
+    text-align: center;
+    margin: 0;
+}
+
+table, th, td {
+	border:1px solid #333;
+	border-collapse: collapse;
+	padding: 5px;
+}
+th {
+	font-weight: 700;
+	font-size: 15px;
+	background-color: #eee;
+}
+td {
+	background-color: #bed;
+	font-size: 13px;
+	text-align: center;
+}
+
+#festival {
+    width: 250px;
+    padding: 5px;
+}
+
+#promo {
+    text-align: center;
+    font-weight: bold;
+    background-color: #dbaf37;
+    padding: 5px;
+}
+
+.events {
+    width: 300px;
+    border: 10px inset #382bac;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    background-color: #a694e9;
+}
+
+/* Storm Center Page */
+fieldset {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+label {
+    padding: 5px 0;
+}
+#submit {
+    width: 100px;
+    height: 30px;
+    font-size: 100%;
+}
+legend {
+    font-weight: bold;
+}
+#userIn {
+    display: flex;
+    flex-direction: column;
+}
+form {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+}
+textarea {
+    width: 100%;
+}
+
+/* Gallery Page */
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+main figure {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    margin: 10px auto;
+    max-width: 350px;
+}
+main figure:hover {
+    box-shadow: 0 0 20px #313030;
+}
+figcaption {
+    padding: 5px 10px;
+}
+#gallery img {
+    height: auto;
+    max-width: 300px;
+    filter: blur(0em);
+    transition: filter 0.5s;
+    margin: 0 auto;
+}
+#gallery img[data-src] {
+    filter: blur(0.2em);
+}
+
+@media screen and (min-width: 1024px) {
+    nav ul.hide {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: -5px;
+    }
+    nav li a{
+        display: block;
+        text-align: center;
+        padding-left: 15px;
+    }
+    nav button {
+        display: none;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    main, footer {
+        margin: 0 5%;
+    }
+
+    /* Home Page */
+    .towns {
+        grid-template-columns: repeat(3, 300px);
+    }
+    #motto {
+        height: 20px;
+    }
+    .views {
+        width: 900px;
+    }
+
+    /* Town Pages */
+    table {
+        margin: 0 auto;
+    }
+
+    .placeholder2, .placeholder4 #map {
+        display: block;
+    }
+
+    .placeholder3 {
+        display: block;
+
+    }
+    .placeholder4 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    #festival {
+        float: right;
+    }
+    #map {
+        width: 250px;
+        padding-right: 15px;
+    }
+
+    /* Gallery Page */
+    main figure {
+        box-shadow: 0 0 20px #808080;
+    }
+    #gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    /* Home Page */
+    .towns {
+        grid-template-columns: repeat(1, 600px);
+    }
+    .towns section {
+        display: flex;
+        flex-direction: row;
+    }
+    .towns section:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+    .towns img, #town {
+        width: 45%;
+        align-items: center;
+    }
+    .views {
+        width: 600px;
+    }
+
+    /* Town Pages */
+    #festival {
+        width: 320px;
+    }
+
+    /* Storm Center Page */
+    #userIn {
+        flex-direction: row;
+    }
+    main {
+        padding: 10px 30px;
+    }
+    form {
+        width: 400px;
+    }
+
+    /* Gallery page */
+    #gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 400px) {
+    /* Town Pages */
+    .placeholder {
+        position: relative;
+    }
+    .summary {
+        position: absolute;
+        top: 25px;
+        left: 50px;
+    }
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "description" content = "Weather Side for Anastasiya Yazvinskaya in CIT 230: Web frontend Development at Brigham Young University - Idaho">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Weather Side</title>
+        <link rel = "shortcut icon" href = "favicon.ico">
+        <link rel = "stylesheet" href = "../normalize.css">
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <div id = "content">
+            <div id = "promo">
+                Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+            </div>
+            <header>
+                <a href = "../index.html">Back to Portal</a>
+                <div id = "name">
+                    <picture>
+                        <source media = "(max-width: 400px)"
+                        srcset = "images/icon3.png"/>
+                        <source media = "(max-width: 800px)"
+                        srcset = "images/icon2.png"/>
+                        <img src = "images/icon1.png" alt = "Logo">
+                    </picture>
+                    <div id = "headings">
+                        <h1>Weather Side</h1>
+                        <h4>Look at your day from the weather side.</h4>
+                    </div>
+                </div>
+            </header>
+            <nav id= "clear">
+                <button onclick="Menu()">&#9776;Menu</button>
+                <ul id = "menu" class= "hide">
+                    <li> <a href = "index.html">Home</a></li>
+                    <li> <a id = "activepage" href = "preston.html">Preston</a></li>
+                    <li> <a href = "#">Soda Springs</a></li>
+                    <li> <a href = "#">Fish haven</a></li>
+                    <li> <a href = "stormcenter.html">Storm Center</a></li>
+                    <li> <a href = "gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h2>Preston, Idaho</h2>
+                <div class = "placeholder">
+                    <picture>
+                        <source media = "(max-width: 640px)"
+                        srcset = "images/Preston/promoSmall.jpg"/>
+                        <source media = "(max-width: 1024px)"
+                        srcset = "images/Preston/promoMedium.jpg"/>
+                        <img src = "images/Preston/promoLarge.jpg" alt = "Hero">
+                    </picture>
+                    <section class = "summary">
+                        <h3>Weather Summary</h3>
+                        <hr>
+                        <p>Currently: <span id = "cur"></span></p>
+                        <p>High: <span id = "temp"></span>&deg;F</p>
+                        <p>Wind Chill: <span id = "chill"></span>&deg;F</p>
+                        <p>Humidity: <span id = "hum"></span>%</p>
+                        <p>Wind Speed: <span id = "speed"></span> mph</p>
+                    </section>
+                </div>
+                <div class = "placeholder2">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src ="#" alt = "First day">
+                                <div><span></span>&deg;F</div>
+                            </td>
+                            <td>
+                                <img src ="#" alt = "Second day">
+                                <div><span></span>&deg;F</div>
+                            </td>
+                            <td>
+                                <img src ="#" alt = "Third day">
+                                <div><span></span>&deg;F</div>
+                            </td>
+                            <td>
+                                <img src ="#" alt = "Fourth day">
+                                <div><span></span>&deg;F</div>
+                            </td>
+                            <td>
+                                <img src ="#" alt = "Fifth day">
+                                <div><span></span>&deg;F</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class = "events"></div>
+                <div class = "placeholder3">
+                    <img src = "images/Preston/festival1.jpg" alt = "Festival of Lights" id = "festival">
+                    <h2>Festival of Lights</h2>
+                    <p>Each year Preston holds the "Idaho Festival of Lights", which starts 
+                        the day after Thanksgiving and goes until December 31. The festival 
+                        was started by two local business men (Wayne Bell and Walter Ross) 
+                        along with many other community organizations to help celebrate 
+                        Christmas within the community. The festival consists of a lighted 
+                        parade, fireworks, and displays in the city park. The merchants 
+                        along the main street of Preston have their store fronts decorated 
+                        with Christmas lights during the festival. A key event of the 
+                        festival is the International Bed Race, which is held on the 
+                        Saturday following Thanksgiving on the main street of Preston. 
+                        Additional events are a kids' parade and free movie</p>
+                </div>
+                <div class = "placeholder4">
+                    <img src = "images/Preston/preston.png" alt = "Preston on map" id = "map">
+                    <div id = "contacts">
+                        <h4>Weather Side</h4>
+                        <p><img src = "images/Preston/location.png" alt = "location">30 N 1st E, Preston, ID 83263</p>
+                        <br>
+                        <p>&phone; 999.999.9999</p>
+                        <p>&#9993; weatherside@tws.com</p>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                &copy; 2020 | Anastasiya Yazvinskaya | Russia, Novorossiysk | <a href = "https://www.byui.edu/online">BYUI Online Learning</a>
+                <br>
+                Last modified: <span id = "lastModified"></span>
+            </footer>
+        </div>
+        <script src = "script.js"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+            WebFont.load({ google: {
+                families: [
+                    'Abril Fatface', 'Bangers', 'Dosis'
+                ]}
+            });
+        </script>
+    </body>
+</html>
