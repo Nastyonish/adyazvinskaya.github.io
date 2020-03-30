@@ -60,9 +60,6 @@ nav ul li a {
 	text-decoration: none;
 	font-size: 1.2rem;
 }
-nav li:first-child {
-    display: block;
-  }
 nav ul li a:hover {
 	background-color: #5772a0;
 }

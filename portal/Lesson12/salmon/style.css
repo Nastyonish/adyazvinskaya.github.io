@@ -1,0 +1,95 @@
+content {
+    width: 100%
+}
+
+header {
+    background-color: #35d2ab;
+    padding-left: 5px;
+    margin-top: -20px;
+}
+    #logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 13px;
+    }
+    header h2 {
+        margin-top: -20px;
+        font-size: 19px;
+    }
+    header button {
+        position: absolute;
+        right: 10px;
+        width: 50px;
+        height: 110px;
+        font-size: 50px;
+        text-align: center;
+        margin-top: -130px;
+        margin-right: 5px;
+        border: none;
+        background-color: transparent;
+        color: #025a44;
+    }
+    h1 {
+        color: #025a44;
+    }
+    h2 {
+        color: #2d8109;
+    }
+
+nav {
+    background-color: #4282d3;
+    margin-top: -16px;
+}
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        font-weight: bold;
+    }
+    nav ul li a {
+        display: block;
+        text-align: center;
+        padding: 0.75rem;
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: #05326d;
+    }
+    nav li:first-child {
+        display: block;
+    }
+    nav ul li a:hover {
+        background-color: #05326d;
+        color: #4282d3;
+    }
+    nav ul li a:active {
+        background-color: #05326d;
+        color: #4282d3;
+    }
+    nav.hide {
+        display: none;
+    }
+    #menu:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    #activePage {
+        background-color: #05326d;
+        color: #4282d3;
+    }
+
+/*main {
+
+}*/
+    .sectTwo {
+        background-color: #4282d3;
+    }
+    .contact {
+        background-color: #4282d3;
+    }
+
+footer {
+    background-color: #4282d3;
+}

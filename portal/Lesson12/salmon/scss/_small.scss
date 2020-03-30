@@ -1,0 +1,24 @@
+content {
+    width: 100%
+}
+
+header {
+    background-color: #35d2ab;
+}
+
+nav {
+    background-color: $mainColor;
+}
+
+main {
+    .sectTwo {
+        background-color: #4282d3;
+    }
+    .contact {
+        background-color: #4282d3;
+    }
+}
+
+footer {
+    background-color: $mainColor;
+}
