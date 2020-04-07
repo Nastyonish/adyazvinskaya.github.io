@@ -9,110 +9,150 @@
         <link rel = "stylesheet" href = "style.css">
     </head>
     <body>
-        <header>
-            <div id = "logo">
-                <picture>
-                    <source media = "(max-width: 640px)"
-                        scrset = "images/icon_3.png"/>
-                    <source media = "(max-width: 1024px)"
-                    scrset = "images/icon_2.png"/>
-                    <img src = "images/icon_3.png" alt = "Salmon River Adventures Icon">
-                </picture>
-                <h1>Salmon<br>River<br>Adventures</h1>
-            </div>
-            <h2>Discover the wildlife with us.</h2>
-            <button onclick="Menu()">&#9776;</button>
-        </header>
-        <nav id = "menu" class= "hide">
-            <ul>
-                <li> <a id = "activePage" href = "index.html">Home</a></li>
-                <li> <a href = "#">Adventure trips</a></li>
-                <li> <a href = "#">River Guide</a></li>
-                <li> <a href = "#">Reservation</a></li>
-                <li> <a href = "#">Contact Us</a></li>
-            </ul>
-        </nav>
-        <main>
-            <section class = "sectOne">
-                <picture>
-                    <source media = "(max-width: 640px)"
-                        scrset = "images/"/>
-                    <source media = "(max-width: 1024px)"
-                    scrset = "images/"/>
-                    <img src = "#" alt = "Salmon River Adventures">
-                </picture>
-                <h2>Page Title</h2>
-                <div>
-                    <p>some text kdjnjskcnoishcnkskcjsudh dkfhsc ioshsocn cuirfhkljn uihrnfkln
-                        iuhbiojpo sujfs uos ui9toeiujl 8tyoihfkls yuuosfhj sd
-                        skdfjh uhsuifjn hyuifihfkjd uhgkdh gguhgkj uirgyurh hruieh 
-                        ruihfjk hgruhklsnjgkjru jkbiudhv uirghuhnv rgububgj ujbrjhyui
-                        jkhjknfjkh uhuhndh uirhguidbv heruihbjkvyf ugfyubv
-                    </p>
+        <div id = "content">
+            <header>
+                <div id = "logo">
+                    <picture>
+                        <source media = "(max-width: 430px)"
+                            srcset = "images/icon_3.png"/>
+                        <source media = "(max-width: 1020px)"
+                            srcset = "images/icon_2.png"/>
+                        <img src = "images/icon_1.png" alt = "Salmon River Adventures Icon">
+                    </picture>
+                    <h1>Salmon<br>River<br>Adventures</h1>
                 </div>
-                <h3>Subtitle</h3>
-                <div>
-                    <p>some text kdjnjskcnoishcnkskcjsudh dkfhsc ioshsocn cuirfhkljn uihrnfkln
-                        iuhbiojpo sujfs uos ui9toeiujl 8tyoihfkls yuuosfhj sd
-                        skdfjh uhsuifjn hyuifihfkjd uhgkdh gguhgkj uirgyurh hruieh 
-                        ruihfjk hgruhklsnjgkjru jkbiudhv uirghuhnv rgububgj ujbrjhyui
-                        jkhjknfjkh uhuhndh uirhguidbv heruihbjkvyf ugfyubv
-                    </p>
-                </div>
-            </section>
-            <section class = "sectTwo">
-                <img src = "#" alt = "Some image">
-                <div>
-                    <p>some text kdjnjskcnoishcnkskcjsudh dkfhsc ioshsocn cuirfhkljn uihrnfkln
-                        iuhbiojpo sujfs uos ui9toeiujl 8tyoihfkls yuuosfhj sd
-                        skdfjh uhsuifjn hyuifihfkjd uhgkdh gguhgkj uirgyurh hruieh 
-                        ruihfjk hgruhklsnjgkjru jkbiudhv uirghuhnv rgububgj ujbrjhyui
-                        jkhjknfjkh uhuhndh uirhguidbv heruihbjkvyf ugfyubv
-                    </p>
-                </div>
-                <div>
-                    <img src = "#" alt = "Some image">
-                    <img src = "#" alt = "Some image">
-                    <img src = "#" alt = "Some image">
-                </div>
-            </section>
-            <section class = "sectThree">
-                <div>
-                    <h2>Title</h2>
-                    <p>some text kdjnjskcnoishcnkskcjsudh dkfhsc ioshsocn cuirfhkljn uihrnfkln
-                        iuhbiojpo sujfs uos ui9toeiujl 8tyoihfkls yuuosfhj sd
-                        skdfjh uhsuifjn hyuifihfkjd uhgkdh gguhgkj uirgyurh hruieh 
-                        ruihfjk hgruhklsnjgkjru jkbiudhv uirghuhnv rgububgj ujbrjhyui
-                        jkhjknfjkh uhuhndh uirhguidbv heruihbjkvyf ugfyubv
-                    </p>
-                </div>
-                <div>
-                    <section class = "summary">
-                        <h3>Riggins, Idaho</h3>
-                        <hr>
-                        <p>Currently: <span id = "cur"></span></p>
-                        <p>High: <span id = "temp"></span>&deg;F</p>
-                        <p>Wind Chill: <span id = "chill"></span>&deg;F</p>
-                        <p>Humidity: <span id = "hum"></span>%</p>
-                        <p>Wind Speed: <span id = "speed"></span> mph</p>
-                    </section>
-                    <button>Reservatioin</button>
-                </div>
-            </section>
-            <section class = "contact">
-                <img src = "#" alt = "map">
-                <div id = "contacts">
-                    <h4>Salmon River Adventures</h4>
-                    <p>1000 S Main St., Riggins, ID</p>
-                    <br>
-                    <p>&phone; 999.999.9999</p>
-                    <p>&#9993; salmonriveradventures@tws.com</p>
-                </div>
-            </section>
-        </main>
-        <footer>
-            &copy; 2020 | Salmon Rivers Adventures | Riggins, Idaho | Anastasiya Yazvinskaya
-        </footer>
+                <h2>Discover the wildlife with us.</h2>
+                <button onclick="Menu()">&#9776;<span id = "menuButton">Menu</span></button>
+            </header>
+            <nav id = "menu" class= "hide">
+                <ul>
+                    <li> <a id = "activePage" href = "index.html">Home</a></li>
+                    <li> <a href = "trips.html">Adventure trips</a></li>
+                    <li> <a href = "guide.html">River Guide</a></li>
+                    <li> <a href = "reservation.html">Reservation</a></li>
+                    <li> <a href = "contactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <main>
+                <section class = "sectOne">
+                    <div id = "main">
+                        <picture>
+                            <source media = "(max-width: 430px)"
+                                srcset = "images/SalmonRiver_3.jpg"/>
+                            <source media = "(max-width: 1020px)"
+                                srcset = "images/SalmonRiver_2.jpg"/>
+                            <img src = "images/SalmonRiver_1.jpg" alt = "Salmon River Adventures">
+                        </picture>
+                        <div>
+                            <h2>The Salmon River</h2>
+                            <p>The Salmon River is also known as "The River of 
+                                No Return". The Salmon is a popular destination 
+                                for whitewater kayaking, canoeing, and rafting. 
+                                The canyons of the Salmon allow for magnificent 
+                                views of the complex geology of the region. The 
+                                Frank Church-River of No Return Wilderness Area 
+                                includes one of the deepest canyons in the 
+                                continental United States, which at roughly 7,000 
+                                feet (2,130 m) of vertical relief, is deeper than 
+                                the Grand Canyon. Outdoor Lodges dot the main 
+                                canyon of the Salmon River from Salmon, Idaho to 
+                                Riggins, Idaho. Often the only way to access these 
+                                lodges is either by motorized boats, rafting trips, 
+                                hiking, and even some isolated airstrips.
+                            </p>
+                            <p>The South Fork of the Salmon flows through Payette 
+                                National Forest and enters the Wild and Scenic Main 
+                                Fork at Mackay Bar. The Main Fork raft trip ends 
+                                about 25 miles (40 km) east of Riggins, either at 
+                                Vinegar Creek or Carey Creek, marking the beginning 
+                                of the Lower Salmon rafting section.
+                            </p>
+                        </div>
+                    </div>
+                    <!--<h3>The Salmon River Adventures</h3>
+                    <div>
+                        <p>Idaho's Salmon River is divided by name into different 
+                            sections, namely the Main Salmon, the Middle Fork of the 
+                            Salmon River and the Lower Salmon. Any section of the Salmon 
+                            River rafting is perfect for your family or group getaway 
+                            with a great mixture of fun rapids, calm floats, great 
+                            swimming and peaceful camping. Each of these trips offers 
+                            a very unique setting from one another. Just because they 
+                            call it the "River of No Return" doesn't mean you shouldn't! 
+                        </p>
+                    </div>-->
+                </section>
+                <section class = "sectTwo">
+                    <picture>
+                        <source media = "(max-width: 430px)"
+                            srcset = "images/run_3.jpg"/>
+                        <source media = "(max-width: 1020px)"
+                            srcset = "images/run_2.jpg"/>
+                        <img src = "images/run_1.jpg" alt = "Some image">
+                    </picture>
+                    <div>
+                        <p>Idaho's Salmon River is divided by name into different 
+                            sections, namely the Main Salmon, the Middle Fork of the 
+                            Salmon River and the Lower Salmon. Any section of the Salmon 
+                            River rafting is perfect for your family or group getaway 
+                            with a great mixture of fun rapids, calm floats, great 
+                            swimming and peaceful camping. Each of these trips offers 
+                            a very unique setting from one another. Just because they 
+                            call it the "River of No Return" doesn't mean you shouldn't!
+                        </p>
+                        <div id = "images">
+                            <img src = "images/staySmall.jpg" alt = "Some image">
+                            <img src = "images/extremeSmall.jpg" alt = "Some image">
+                            <img src = "images/nightSmall.jpg" alt = "Some image">
+                        </div>
+                    </div>
+                </section>
+                <section class = "sectThree">
+                    <div>
+                        <h2>Rafting the River of No Return</h2>
+                        <p>The Salmon River truly caters to all levels of river runner, 
+                            beckoning with options that run from wild to inviting, 
+                            stimulating to relaxing and everything in between. This is 
+                            the ideal trip for the greenhorn to the expert whether it 
+                            be a gathering of friends, a young family, or a 
+                            multi-generational group. Running the Salmon is an 
+                            experience, which will forge bonds and create memories that 
+                            will last a lifetime. For anyone seeking to disconnect from 
+                            the world and reconnect with nature and the closest of 
+                            friends and family, the Salmon River stands as the benchmark 
+                            of adventure on one of the premier wilderness rivers on earth.
+                        </p>
+                    </div>
+                    <div>
+                        <section class = "summary">
+                            <h3>Riggins, Idaho</h3>
+                            <hr>
+                            <p>Currently: <span id = "cur"></span></p>
+                            <p>High: <span id = "temp"></span>&deg;F</p>
+                            <p>Wind Chill: <span id = "chill"></span>&deg;F</p>
+                            <p>Humidity: <span id = "hum"></span>%</p>
+                            <p>Wind Speed: <span id = "speed"></span> mph</p>
+                        </section>
+                        <a href = "reservation.html"><button>Reservation</button></a>
+                    </div>
+                </section>
+                <section class = "contact">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.5750810773743!2d-116.31988428505159!3d45.41790754455317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54a6c5695ed5fae5%3A0x837cd0558ffd520c!2zMTAwMCBTIE1haW4gU3QsIFJpZ2dpbnMsIElEIDgzNTQ5LCDQodCo0JA!5e0!3m2!1sru!2sru!4v1585837769785!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <div id = "contacts">
+                        <h3>Salmon River Adventures</h3>
+                        <p>1000 S Main St., Riggins, ID</p>
+                        <br>
+                        <p>&phone; 999.999.9999</p>
+                        <p>&#9993; salmonriveradventures@tws.com</p>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                &copy; 2020 | Salmon Rivers Adventures | Riggins, Idaho | Anastasiya Yazvinskaya
+                <br>
+                Last modified: <span id = "lastModified"></span>
+            </footer>
+        </div>
         <script src = "script.js"></script>
     </body>
 </html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "description" content = "Salmon Rivers Adventures Site for Anastasiya Yazvinskaya in CIT 230: Web frontend Development at Brigham Young University - Idaho">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SRA Contact Us</title>
+        <link rel = "shortcut icon" href = "favicon.ico">
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <div id = "content">
+            <header>
+                <div id = "logo">
+                    <picture>
+                        <source media = "(max-width: 430px)"
+                            srcset = "images/icon_3.png"/>
+                        <source media = "(max-width: 1020px)"
+                            srcset = "images/icon_2.png"/>
+                        <img src = "images/icon_1.png" alt = "Salmon River Adventures Icon">
+                    </picture>
+                    <h1>Salmon<br>River<br>Adventures</h1>
+                </div>
+                <h2>Discover the wildlife with us.</h2>
+                <button onclick="Menu()">&#9776;<span id = "menuButton">Menu</span></button>
+            </header>
+            <nav id = "menu" class= "hide">
+                <ul>
+                    <li> <a href = "index.html">Home</a></li>
+                    <li> <a href = "trips.html">Adventure trips</a></li>
+                    <li> <a href = "guide.html">River Guide</a></li>
+                    <li> <a href = "reservation.html">Reservation</a></li>
+                    <li> <a id = "activePage" href = "contactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <main>
+                
+            </main>
+            <footer>
+                &copy; 2020 | Salmon Rivers Adventures | Riggins, Idaho | Anastasiya Yazvinskaya
+                <br>
+                Last modified: <span id = "lastModified"></span>
+            </footer>
+        </div>
+        <script src = "script.js"></script>
+    </body>
+</html>
