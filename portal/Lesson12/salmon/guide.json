@@ -4,28 +4,31 @@
             "firstname": "Bree",
             "lastname": "Jackson",
             "picture": "images/guide1_2.jpg",
-            "level": "",
-            "experience": "",
+            "level": "Raft Trip Leader",
+            "experience": "15 years",
             "email": "jacksonb@gmail.com",
-            "biography": ""
+            "slogan": "Go big then go home!",
+            "biography": "Bree hails from Indiana where her reputation there still stands around her academic exploits and track and field records. After earning her degree in geology from Depauw University, she headed west where she fell in love with the Middle Fork of the Salmon River and has called it homebase ever since."
         },
         {
             "firstname": "Craig",
             "lastname": "Wilson",
             "picture": "images/guide2_2.jpg",
-            "level": "",
-            "experience": "",
+            "level": "Safety Kayaker",
+            "experience": "6 years",
             "email": "wilsonc@gmail.com",
-            "biography": ""
+            "slogan": "Adventure is the philosophy. Insight is the goal.",
+            "biography": "Raised in Stewartville, MN, Craig grew up running around the woods behind his house which fostered an enduring love for being outside. Although many of his first jobs were in the outdoors, it wasn’t until a canoe trip on the Rio Grande during college, where he was pursuing Landscape Architecture and Environmental Studies, that he realized he could adventure professionally"
         },
         {
             "firstname": "Gabe",
             "lastname": "Reed",
-            "picture": "images/guide3_2.jpgс",
-            "level": "",
-            "experience": "",
+            "picture": "images/guide3_2.jpg",
+            "level": "Safety Rafter",
+            "experience": "11 years",
             "email": "reedg@gmail.com",
-            "biography": ""
+            "slogan": "Always look on the bright side of life",
+            "biography": "Gabe grew up near the majestic Rogue River where he discovered his passion for whitewater by doing all of the day stretches around Shady Cove, Oregon. Although he was almost a professional golfer, Brodie found the opportunities to meet new people, being part of an accomplished team of guides, and the joy of exploring little-known rivers more appealing."
         }
     ]
 }

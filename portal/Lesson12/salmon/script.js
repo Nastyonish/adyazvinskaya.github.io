@@ -22,7 +22,7 @@ fetch(apiURL)
         document.getElementById('cur').textContent = capitalizeFLetter(jsonObject.weather[0].description);
 });
 
-const apiGuide = '/guide.json';
+const apiGuide = 'https://nastyonish.github.io/adyazvinskaya.github.io/portal/Lesson12/salmon/guide.json';
 
 fetch(apiGuide)
   .then(function (response) {
@@ -34,6 +34,7 @@ fetch(apiGuide)
     for(let i = 0; i < guides.length; i++) {
       let guide = document.createElement('section');
       let h2 = document.createElement('h2');
+      let div = document.createElement('div');
       let div0 = document.createElement('div');
       let div1 = document.createElement('div');
       let div2 = document.createElement('div');
@@ -42,6 +43,7 @@ fetch(apiGuide)
       let image = document.createElement('img');
 
       h2.textContent = guides[i].firstname + ' ' + guides[i].lastname;
+      div.textContent = guides[i].slogan;
       div0.setAttribute('id', 'info');
       div1.textContent = 'Certification level: ' + guides[i].level;
       div2.textContent = 'Years of experience: ' + guides[i].experience;
@@ -53,13 +55,14 @@ fetch(apiGuide)
 
       guide.appendChild(image);
       guide.appendChild(h2);
+      guide.appendChild(div)
       guide.appendChild(div0);
       div0.appendChild(div1);
       div0.appendChild(div2);
       div0.appendChild(div3);
       guide.appendChild(div4);
 
-      document.querySelector('div.guide').appendChild(town);
+      document.querySelector('div.guide').appendChild(guide);
     }
   });
 
