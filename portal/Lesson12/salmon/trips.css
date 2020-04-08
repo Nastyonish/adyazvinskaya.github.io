@@ -1,0 +1,91 @@
+main {
+    margin: 20px;
+}
+
+main h2, main h3 {
+    text-align: center;
+}
+h3 {
+    color: #051364;
+}
+
+#info {
+    border: 10px inset #ffb082;
+    background-color: #ffcaac;
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: #d4ffc2;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+section img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main button {
+    width: 100%;
+    height: 40px;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #FF8740;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 640px) {
+    main img {
+        width: 50%;
+        margin-top: -280px;
+        float: left;
+    }
+    #info {
+        float: right;
+        width: 40%;
+    }
+    section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+#begin {
+    text-align: center;
+}
+
+    .trips {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    section {
+        flex-direction: column;
+        width: 30%;
+    }
+    #info {
+        float: none;
+        width: 80%;
+    }
+
+    #text p {
+        height: 210px;
+    }
+
+    main img {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    main button {
+        margin: 0 35%;
+        width: 30%;
+    }
+}

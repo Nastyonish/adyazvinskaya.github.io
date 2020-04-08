@@ -2,11 +2,12 @@
 <html lang = "en-us">
     <head>
         <meta charset = "utf-8">
-        <meta name = "description" content = "Salmon Rivers Adventures Site for Anastasiya Yazvinskaya in CIT 230: Web frontend Development at Brigham Young University - Idaho">
+        <meta name = "description" content = "Salmon River Adventures Site for Anastasiya Yazvinskaya in CIT 230: Web frontend Development at Brigham Young University - Idaho">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>SRA Adventure Trips</title>
         <link rel = "shortcut icon" href = "favicon.ico">
         <link rel = "stylesheet" href = "style.css">
+        <link rel = "stylesheet" href = "trips.css">
     </head>
     <body>
         <div id = "content">
@@ -34,10 +35,123 @@
                 </ul>
             </nav>
             <main>
-                
+                <div id = "begin">
+                    <h2>Active Adventure on the Salmon</h2>
+                    <p>Running the Salmon River is to be set free in one of nature’s 
+                        wildest playgrounds.  Comparable in size and volume to the 
+                        Colorado River and the Grand Canyon, the opportunities to 
+                        challenge yourself are nearly boundless. The level of 
+                        adventure you choose is limited only by your imagination 
+                        and appetite.
+                    </p>
+                </div>
+                <div class = "trips">
+                    <section class = "sectOne">
+                        <picture>
+                            <source media = "(max-width: 430px)"
+                                srcset = "images/lowerSalmon_3.jpg"/>
+                            <source media = "(max-width: 1020px)"
+                                srcset = "images/lowerSalmon_2.jpg"/>
+                            <img src = "images/lowerSalmon_1.jpg" alt = "Lower Salmon River">
+                        </picture>
+                        <div>
+                            <div id = "text">
+                                <h3>Lower Salmon River</h3>
+                                <p>Soak up rich scenic wonder and history while splashing 
+                                    toward huge sandy camping beaches. The Lower Salmon 
+                                    River trip explores the final miles of the Salmon 
+                                    River before it joins the mighty Snake River on its 
+                                    way to the Columbia. On this section of river, the 
+                                    trip covers 53 miles on the Salmon River plus another 
+                                    21 miles on the Snake River. Along the way, we float 
+                                    through four different canyons named Green, Cougar, 
+                                    Snowhole and Blue.
+                                </p>
+                            </div>
+                            <div id = "info">
+                                <p><b>Begin - Ends:</b> Levingston, Idaho</p>
+                                <p><b>Season:</b> July - September</p>
+                                <p><b>River Distance:</b> 89 miles</p>
+                                <p><b>Rapids:</b> Class II-III</p>
+                                <p><b>Minimum Age:</b> 5</p>
+                                <p><b>Days:</b> 3-4</p>
+                                <p><b>Price:</b> $1495</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class = "sectTwo">
+                        <picture>
+                            <source media = "(max-width: 430px)"
+                                srcset = "images/middleSalmon_3.jpg"/>
+                            <source media = "(max-width: 1020px)"
+                                srcset = "images/middleSalmon_2.jpg"/>
+                            <img src = "images/middleSalmon_1.jpg" alt = "Middle Salmon River">
+                        </picture>
+                        <div>
+                            <div id = "text">
+                                <h3>Middle Salmon River</h3>
+                                <p>Flowing untamed through a land so rugged that any 
+                                    attempts at settlement have failed, the Middle Fork 
+                                    of the Salmon River is truly a legend among the 
+                                    whitewater rivers of the world. Traces of man's attempts to settle the area 
+                                    remain as dilapidated log cabins, while more ancient 
+                                    cultures left their marks in prehistoric cave paintings. 
+                                    Enjoy more than 100 Idaho whitewater rafting rapids, 
+                                    fishing in clear alpine waters, relaxation in natural hot 
+                                    springs, hikes to magnificent waterfalls, and camping in 
+                                    gorgeous mountain meadows.
+                                </p>
+                            </div>
+                            <div id = "info">
+                                <p><b>Begin - Ends:</b> Stanley, Idaho - Salmon, Idaho</p>
+                                <p><b>Season:</b> June - August</p>
+                                <p><b>River Distance:</b> 100 miles</p>
+                                <p><b>Rapids:</b> Class III-V</p>
+                                <p><b>Minimum Age:</b> 7</p>
+                                <p><b>Days:</b> 4-5</p>
+                                <p><b>Price:</b> $1990</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class = "sectThree">
+                        <picture>
+                            <source media = "(max-width: 430px)"
+                                srcset = "images/mainSalmon_3.jpg"/>
+                            <source media = "(max-width: 1020px)"
+                                srcset = "images/mainSalmon_2.jpg"/>
+                            <img src = "images/mainSalmon_1.jpg" alt = "Main Salmon River">
+                        </picture>
+                        <div>
+                            <div id = "text">
+                                <h3>Main Salmon River</h3>
+                                <p>Rich in scenic wonders and history, the Main Salmon River 
+                                    drops 1,200 feet in 89 miles, creating some exciting 
+                                    memories along the way. Calm sections and deep pools 
+                                    perfect for relaxing, swimming, and simply absorbing the 
+                                    country's splendor. You'll enjoy sandy camping beaches 
+                                    backed up to pine forests and granite mountains. Here, 
+                                    wildlife abounds and rock paintings left by ancient 
+                                    inhabitants still exist. Homestead cabins dot the riverway, 
+                                    and some are still occupied today, made accessible by 
+                                    private jetboat and/or private plane.
+                                </p>
+                            </div>
+                            <div id = "info">
+                                <p><b>Begin - Ends:</b> Salmon, Idaho - McCall, Idaho</p>
+                                <p><b>Season:</b> June - August</p>
+                                <p><b>River Distance:</b> 82 miles</p>
+                                <p><b>Rapids:</b> Class II-IV</p>
+                                <p><b>Minimum Age:</b> 6</p>
+                                <p><b>Days:</b> 5-6</p>
+                                <p><b>Price:</b> $995</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <a href = "reservation.html"><button>Reservation</button></a>
             </main>
             <footer>
-                &copy; 2020 | Salmon Rivers Adventures | Riggins, Idaho | Anastasiya Yazvinskaya
+                &copy; 2020 | Salmon River Adventures | Riggins, Idaho | Anastasiya Yazvinskaya
                 <br>
                 Last modified: <span id = "lastModified"></span>
             </footer>

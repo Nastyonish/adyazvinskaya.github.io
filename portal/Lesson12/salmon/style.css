@@ -27,6 +27,7 @@ header {
         border: none;
         background-color: transparent;
         color: #025a44;
+        cursor: pointer;
     }
     h1 {
         color: #142F26;

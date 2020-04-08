@@ -37,6 +37,7 @@ main img {
         margin: 0 auto;
         margin-top: 10px;
         font-size: large;
+        cursor: pointer;
     }
 
 .contact {
