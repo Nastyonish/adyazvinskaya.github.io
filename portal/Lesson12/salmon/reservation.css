@@ -44,8 +44,13 @@ input[type=text], input[type=email], input[type=tel], input[type=date], textarea
     box-sizing: border-box; 
     margin-top: 6px; 
     margin-bottom: 16px; 
-    resize: vertical; 
+    resize: vertical;
+    display: flex;
+    flex-direction: column;
   }
+  #trip div {
+    margin: 5px 0;
+}
   input[type=radio]
   {
     width: fit-content;
@@ -71,7 +76,12 @@ input[type=text], input[type=email], input[type=tel], input[type=date], textarea
         flex-direction: row;
         justify-content: space-between;
     }
-
+    #trip {
+        flex-direction: row;
+    }
+    #trip div {
+        margin-right: 20px;
+    }
     section {
         width: 30%;
     }
