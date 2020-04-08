@@ -78,57 +78,6 @@ nav {
         color: #4282d3;
     }
 
-
-    main h2, main h3 {
-        text-align: center;
-    }
-    .sectOne {
-        padding: 10px 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .sectTwo {
-        background-color: #89E9D1;
-        padding: 10px 20px;
-        
-    }
-    main img {
-        width: 100%;
-        margin: 0 auto;
-    }
-    .sectThree {
-        padding: 10px 20px;
-    }
-        .summary {
-            width: 200px;
-            border: 10px inset #FF8740;
-            text-align: center;
-            margin: 0 auto;
-            background-color: #ffcdb0;
-        }
-        main button {
-            width: 100%;
-            height: 40px;
-            align-items: center;
-            background-color: #FF8740;
-            font-weight: bold;
-            border: 3px inset #FF8740;
-            margin: 0 auto;
-            margin-top: 10px;
-            font-size: large;
-        }
-
-    .contact {
-        background-color: #89E9D1;
-        padding: 20px 20px;
-        text-align: center;
-    }
-    iframe, #images {
-        display: none;
-    }
-
 footer {
     background-color: #4282d3;
     text-align: center;
@@ -165,36 +114,6 @@ footer {
     nav {
         margin-top: 0px;
     }
-
-   
-    #main img {
-        float: right;
-        width: auto;
-        margin: 20px;
-        margin-top: 70px;
-    }
-    .sectOne h2 {
-        text-align: left;
-    }
-
-    .sectTwo {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    .sectTwo img {
-        width: auto;
-        margin: 10px;
-    }
-
-    .sectThree {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    .summary {
-        margin: 0 20px;
-    }
 }
 
 
@@ -229,38 +148,5 @@ footer {
     }
     nav.hide {
         display: block;
-    }
-
-    #main img {
-        margin-top: 25px;
-    }
-    main h3 {
-        text-align: left;
-    }
-
-    #images {
-        display: block;
-        margin: -5px;
-    }
-
-    iframe {
-        display: block;
-        max-width: 800px;
-        max-height: 400px;
-        margin-top: -15px;
-    }
-    #contacts {
-        padding-left: 10px;
-    }
-    .contact {
-        display: flex;
-        flex-direction: row;
-        height: 440px;
-        justify-content: center;
-        align-items: center;
-        text-align: left;
-    }
-    .contact h3 {
-        text-align: left;
     }
 }

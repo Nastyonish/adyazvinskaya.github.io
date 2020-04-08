@@ -2,11 +2,12 @@
 <html lang = "en-us">
     <head>
         <meta charset = "utf-8">
-        <meta name = "description" content = "Salmon Rivers Adventures Site for Anastasiya Yazvinskaya in CIT 230: Web frontend Development at Brigham Young University - Idaho">
+        <meta name = "description" content = "Salmon River Adventures Site for Anastasiya Yazvinskaya in CIT 230: Web frontend Development at Brigham Young University - Idaho">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>SRA Contact Us</title>
         <link rel = "shortcut icon" href = "favicon.ico">
         <link rel = "stylesheet" href = "style.css">
+        <link rel = "stylesheet" href = "contactUs.css">
     </head>
     <body>
         <div id = "content">
@@ -34,10 +35,34 @@
                 </ul>
             </nav>
             <main>
-                
+                <section class = "contact">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.5750810773743!2d-116.31988428505159!3d45.41790754455317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54a6c5695ed5fae5%3A0x837cd0558ffd520c!2zMTAwMCBTIE1haW4gU3QsIFJpZ2dpbnMsIElEIDgzNTQ5LCDQodCo0JA!5e0!3m2!1sru!2sru!4v1585837769785!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <div id = "contacts">
+                        <h2>Salmon River Adventures</h2>
+                        <p>Address: 1000 S Main St., Riggins, ID 83549</p>
+                        <p>Phone: 999.999.9999</p>
+                        <p>E-mail: sra@tws.com</p>
+                    </div>
+                </section>
+                <form>
+                   <fieldset class = "">
+                       <legend>Do you have any question?</legend>
+                       <label for = "fname">First Name</label>
+                       <input type = "text" id = "fname" name = "firstname" placeholder = "Your name..." required>
+                       <label for = "lname">Last Name</label>
+                       <input type = "text" id = "lname" name = "lastname" placeholder = "Your last name..." required>
+                       <label for = "email">E-mail</label>
+                       <input type = "email" id = "email" name = "email" placeholder = "email@test.com" required>
+                       <label for = "phone">Phone number</label>
+                       <input type = "tel" id = "phone" name = "phone" placeholder = "###-###-####" required>
+                       <label for = "message">Message</label>
+                       <textarea id = "message" name = "message" rows = "10" placeholder = "Write your message here..."></textarea>
+                       <input type = "submit" value = "Submit">
+                   </fieldset> 
+                </form>
             </main>
             <footer>
-                &copy; 2020 | Salmon Rivers Adventures | Riggins, Idaho | Anastasiya Yazvinskaya
+                &copy; 2020 | Salmon River Adventures | Riggins, Idaho | Anastasiya Yazvinskaya
                 <br>
                 Last modified: <span id = "lastModified"></span>
             </footer>
