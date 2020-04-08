@@ -2,7 +2,7 @@ main {
     margin: 20px;
 }
 
-main h2, main h3 {
+main h1, main h2 {
     text-align: center;
 }
 h3 {

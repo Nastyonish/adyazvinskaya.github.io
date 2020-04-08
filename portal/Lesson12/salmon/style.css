@@ -1,6 +1,13 @@
+#content{
+    font-family: "Inria Sans";
+}
 header {
     background-color: #35d2ab;
     padding-left: 5px;
+    font-family: "Lobster";
+}
+main h1, h2, h3 {
+    font-family: "Acme";
 }
     #logo {
         display: flex;

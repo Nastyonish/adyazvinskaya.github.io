@@ -1,4 +1,4 @@
-main h2 {
+main h1 {
     text-align: center;
 }
 .sectOne {
@@ -57,7 +57,7 @@ iframe, #images {
     margin: 20px;
     margin-top: 70px;
 }
-.sectOne h2 {
+main h1 {
     text-align: left;
 }
 
