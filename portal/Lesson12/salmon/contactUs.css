@@ -1,15 +1,14 @@
 main {
-    padding-bottom: 20px;
+    margin: 20px;
+    padding-bottom: 10px;
 }
 .contact {
-    margin: 20px;
     display: flex;
     flex-direction: column-reverse;
     text-align: center;
+    padding-bottom: 20px;
 }
-form {
-    margin: 20px;
-}
+
 
 fieldset {
     background-color: rgb(255, 196, 162);
@@ -50,3 +49,41 @@ input[type=text], input[type=email], input[type=tel], textarea {
   input[type=submit]:hover {
     background-color: #4db122;
   }
+
+@media only screen and (min-width: 640px) {
+    .contact {
+        flex-direction: row-reverse;
+        text-align: left;
+        align-items: center;
+    }
+    #contacts {
+        width: 50%;
+    }
+
+    iframe {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    iframe {
+        width: 60%;
+    }
+    .contact {
+        align-items: flex-start;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    form {
+        width: 60%;
+        margin: 0 auto;
+    }
+    #contacts {
+        width: 40%;
+    }
+
+    input[type=submit] {
+        width: 50%;
+    }
+}
