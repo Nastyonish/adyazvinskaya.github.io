@@ -22,6 +22,47 @@ fetch(apiURL)
         document.getElementById('cur').textContent = capitalizeFLetter(jsonObject.weather[0].description);
 });
 
+const apiGuide = '/guide.json';
+
+fetch(apiGuide)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const guides = jsonObject['guide'];
+    console.table(jsonObject);
+    for(let i = 0; i < guides.length; i++) {
+      let guide = document.createElement('section');
+      let h2 = document.createElement('h2');
+      let div0 = document.createElement('div');
+      let div1 = document.createElement('div');
+      let div2 = document.createElement('div');
+      let div3 = document.createElement('div');
+      let div4 = document.createElement('div');
+      let image = document.createElement('img');
+
+      h2.textContent = guides[i].firstname + ' ' + guides[i].lastname;
+      div0.setAttribute('id', 'info');
+      div1.textContent = 'Certification level: ' + guides[i].level;
+      div2.textContent = 'Years of experience: ' + guides[i].experience;
+      div3.textContent = 'E-mail: ' + guides[i].email;
+      div4.textContent = guides[i].byography;
+      image.setAttribute('src', guides[i].picture);
+
+      image.setAttribute('alt', guides[i].firstname + ' ' + guides[i].lastname);
+
+      guide.appendChild(image);
+      guide.appendChild(h2);
+      guide.appendChild(div0);
+      div0.appendChild(div1);
+      div0.appendChild(div2);
+      div0.appendChild(div3);
+      guide.appendChild(div4);
+
+      document.querySelector('div.guide').appendChild(town);
+    }
+  });
+
 // Wind Chill Calculator
 let temp = parseFloat(document.getElementById("temp").textContent);
 let speed = parseFloat(document.getElementById("speed").textContent);

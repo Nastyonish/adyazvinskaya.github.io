@@ -1,0 +1,31 @@
+{
+    "guide": [
+        {
+            "firstname": "Bree",
+            "lastname": "Jackson",
+            "picture": "images/guide1_2.jpg",
+            "level": "",
+            "experience": "",
+            "email": "jacksonb@gmail.com",
+            "biography": ""
+        },
+        {
+            "firstname": "Craig",
+            "lastname": "Wilson",
+            "picture": "images/guide2_2.jpg",
+            "level": "",
+            "experience": "",
+            "email": "wilsonc@gmail.com",
+            "biography": ""
+        },
+        {
+            "firstname": "Gabe",
+            "lastname": "Reed",
+            "picture": "images/guide3_2.jpgс",
+            "level": "",
+            "experience": "",
+            "email": "reedg@gmail.com",
+            "biography": ""
+        }
+    ]
+}
