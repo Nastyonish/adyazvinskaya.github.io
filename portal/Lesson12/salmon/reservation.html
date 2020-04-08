@@ -2,11 +2,12 @@
 <html lang = "en-us">
     <head>
         <meta charset = "utf-8">
-        <meta name = "description" content = "Salmon Rivers Adventures Site for Anastasiya Yazvinskaya in CIT 230: Web frontend Development at Brigham Young University - Idaho">
+        <meta name = "description" content = "Salmon River Adventures Site for Anastasiya Yazvinskaya in CIT 230: Web frontend Development at Brigham Young University - Idaho">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>SRA Reservation</title>
         <link rel = "shortcut icon" href = "favicon.ico">
         <link rel = "stylesheet" href = "style.css">
+        <link rel = "stylesheet" href = "reservation.css">
     </head>
     <body>
         <div id = "content">
@@ -34,10 +35,56 @@
                 </ul>
             </nav>
             <main>
-                
+                <h1>Adventures Await You</h1>
+                <div class = "content">
+                    <div class = "rivers">
+                        <section>
+                            <h2>Lower Salmon River</h2>
+                            <p><b>River Distance:</b> 89 miles</p>
+                            <p><b>Rapids:</b> Class II-III</p>
+                            <p><b>Days:</b> 3</p>
+                            <p><b>Price:</b> $995</p>
+                        </section>
+                        <section>
+                            <h2>Middle Salmon River</h2>
+                            <p><b>River Distance:</b> 100 miles</p>
+                            <p><b>Rapids:</b> Class III-V</p>
+                            <p><b>Days:</b> 5</p>
+                            <p><b>Price:</b> $1495</p>
+                        </section>
+                        <section>
+                            <h2>Main Salmon River</h2>
+                            <p><b>River Distance:</b> 82 miles</p>
+                            <p><b>Rapids:</b> Class II-IV</p>
+                            <p><b>Days:</b> 7</p>
+                            <p><b>Price:</b> $1990</p>
+                        </section>
+                    </div>
+                    <form method = "GET">
+                        <label for = "fname">First name</label>
+                            <input type = "text" id = "fname" name = "fname" placeholder = "First name" required>
+                        <label for = "lname">Last name</label>
+                            <input type = "text" id = "lname" name = "lname" placeholder = "Last name" required>
+                        <label for = "email">E-mail</label>
+                            <input type = "email" id = "email" name = "email" placeholder = "email@test.com" required>
+                        <label for = "phone">Phone number</label>
+                            <input type = "tel" id = "phone" name = "phone" placeholder = "###-###-####" required>
+                        <label for = "adventure">Adventure</label>
+                        <div id = "trip">
+                            <input type = "radio" id = "adventure" name = "adventure" value = "lowerSalmonRiver">Lower Salmon River
+                            <input type = "radio" id = "adventure" name = "adventure" value = "middleSalmonRiver">Middle Salmon River
+                            <input type = "radio" id = "adventure" name = "adventure" value = "mainSalmonRiver">Main Salmon River
+                        </div>
+                        <label for = "startdate">Start date</label>
+                            <input type = "date" id = "startdate" name = "startdate">
+                        <label for = "comment">Comment</label>
+                            <textarea id = "comment" name = "comment" rows = "10" placeholder = "Write your comment or question here..."></textarea>
+                        <input type = "submit" value = "Submit">
+                    </form>
+                </div>
             </main>
             <footer>
-                &copy; 2020 | Salmon Rivers Adventures | Riggins, Idaho | Anastasiya Yazvinskaya
+                &copy; 2020 | Salmon River Adventures | Riggins, Idaho | Anastasiya Yazvinskaya
                 <br>
                 Last modified: <span id = "lastModified"></span>
             </footer>
