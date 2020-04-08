@@ -34,33 +34,41 @@ fetch(apiGuide)
     for(let i = 0; i < guides.length; i++) {
       let guide = document.createElement('section');
       let h2 = document.createElement('h2');
-      let div = document.createElement('div');
       let div0 = document.createElement('div');
       let div1 = document.createElement('div');
       let div2 = document.createElement('div');
+      let br = document.createElement('br');
       let div3 = document.createElement('div');
       let div4 = document.createElement('div');
+      let div5 = document.createElement('div');
+      let div6 = document.createElement('div');
+      let div7 = document.createElement('div');
       let image = document.createElement('img');
 
       h2.textContent = guides[i].firstname + ' ' + guides[i].lastname;
-      div.textContent = guides[i].slogan;
-      div0.setAttribute('id', 'info');
-      div1.textContent = 'Certification level: ' + guides[i].level;
-      div2.textContent = 'Years of experience: ' + guides[i].experience;
-      div3.textContent = 'E-mail: ' + guides[i].email;
-      div4.textContent = guides[i].byography;
+      div0.setAttribute('id', 'image');
+      div1.setAttribute('id', 'info');
+      div2.setAttribute('id', 'center');
+      div3.textContent = guides[i].slogan;
+      div4.textContent = 'Certification level: ' + guides[i].level;
+      div5.textContent = 'Years of experience: ' + guides[i].experience;
+      div6.textContent = 'E-mail: ' + guides[i].email;
+      div7.textContent = guides[i].biography;
       image.setAttribute('src', guides[i].picture);
 
       image.setAttribute('alt', guides[i].firstname + ' ' + guides[i].lastname);
 
-      guide.appendChild(image);
-      guide.appendChild(h2);
-      guide.appendChild(div)
       guide.appendChild(div0);
-      div0.appendChild(div1);
-      div0.appendChild(div2);
-      div0.appendChild(div3);
-      guide.appendChild(div4);
+      div0.appendChild(image);
+      guide.appendChild(div1);
+      div1.appendChild(div2);
+      div2.appendChild(h2);
+      div2.appendChild(div3)
+      div2.appendChild(br);
+      div2.appendChild(div4);
+      div2.appendChild(div5);
+      div2.appendChild(div6);
+      div1.appendChild(div7);
 
       document.querySelector('div.guide').appendChild(guide);
     }

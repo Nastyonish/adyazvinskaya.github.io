@@ -1,0 +1,67 @@
+main {
+    margin: 20px;
+}
+main img {
+    width: 100%;
+}
+
+#center {
+    text-align: center;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+section {
+    background-color: #dcefff;
+    margin: 20px auto;
+    padding: 10px;
+    width: 90%;
+}
+
+@media only screen and (min-width: 640px) {
+    main img {
+        width: auto;
+    }
+    section:nth-child(odd) {
+        display: flex;
+        flex-direction: row;
+    }
+    section:nth-child(even) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    #center {
+        text-align: left;
+    }
+    #info {
+        width: 60%;
+    }
+    #image {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .guide {
+        display: flex;
+        flex-direction: row;
+    }
+    section:nth-child(odd), section:nth-child(even) {
+        flex-direction: column;
+        margin: 0 10px;
+        width: 30%;
+    }
+    #center {
+        text-align: center;
+    }
+    #info {
+        width: 100%;
+    }
+    #image {
+        width: 100%;
+        margin: 0 auto;
+    }
+    main img {
+        width: 100%;
+    }
+}
