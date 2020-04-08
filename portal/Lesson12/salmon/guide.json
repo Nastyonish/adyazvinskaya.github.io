@@ -3,7 +3,7 @@
         {
             "firstname": "Bree",
             "lastname": "Jackson",
-            "picture": "images/guide1_2.jpg",
+            "picture": "images/guide1_2.webp",
             "level": "Raft Trip Leader",
             "experience": "15 years",
             "email": "jacksonb@gmail.com",
@@ -13,7 +13,7 @@
         {
             "firstname": "Craig",
             "lastname": "Wilson",
-            "picture": "images/guide2_2.jpg",
+            "picture": "images/guide2_2.webp",
             "level": "Safety Kayaker",
             "experience": "6 years",
             "email": "wilsonc@gmail.com",
@@ -23,7 +23,7 @@
         {
             "firstname": "Gabe",
             "lastname": "Reed",
-            "picture": "images/guide3_2.jpg",
+            "picture": "images/guide3_2.webp",
             "level": "Safety Rafter",
             "experience": "11 years",
             "email": "reedg@gmail.com",
