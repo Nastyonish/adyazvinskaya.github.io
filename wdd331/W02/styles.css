@@ -1,0 +1,53 @@
+/*
+Attribute Value Selector
+Select all elements that have a specific attribute value
+So we can refer to a specific object.
+*/
+fieldset[title=fieldset2] > p + p {
+    color: blue;
+}
+/*
+Nth of Type Selector
+Selects a specific element based on its type
+and order in another element
+*/
+fieldset:nth-of-type(2) > p + p {
+    color: chartreuse;
+}
+
+/*
+div.help - means a div element with a "help" class
+div .help - means that a div element
+has an element with "help" class
+*/
+
+/*
+Surround the help text (class="help") with parenthesis
+*/
+.help::before {
+    content: "(";
+}
+.help::after {
+    content: ")";
+}
+
+/*
+a CSS rule that will hide any paragraphs
+in a fieldset after the 2nd
+
+fieldset p:nth-child(3) ~ p {
+    visibility: hidden;
+}*/
+
+/* Test A */
+/*input:required {
+    background-color: white;
+}*/
+
+li:nth-child(-n+5) {
+    color: red;
+}
+
+label ~ input {
+    background-color: rgb(187, 135, 235);
+}

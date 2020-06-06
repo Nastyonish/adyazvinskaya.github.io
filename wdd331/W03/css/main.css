@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  width: 381px;
+  margin: auto;
+  background-color: #000000; }
+  @media only screen and (min-width: 1022px) {
+    body {
+      width: 1022px; }
+      body div {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: row;
+        -ms-flex-flow: row;
+        flex-flow: row; } }
+
+h1, h2 {
+  font-family: Lora; }
+
+a {
+  text-decoration: none; }
+
+header {
+  background-color: #6495ED;
+  color: #FAEBD7;
+  text-align: right;
+  padding: 30px; }
+  header a {
+    color: #FAEBD7; }
+  @media only screen and (min-width: 1022px) {
+    header {
+      width: 270px;
+      padding: 50px 40px; } }
+
+nav ul li {
+  list-style-type: none;
+  line-height: 35px; }
+  nav ul li a:visited {
+    color: #FAEBD7; }
+  nav ul li a:active {
+    color: #DEB887; }
+  nav ul li a:hover {
+    color: #FFFFFF;
+    text-decoration: underline; }
+
+main {
+  background-color: #FAEBD7;
+  padding: 1px 20px; }
+  main a {
+    color: #6495ED; }
+  main a:visited {
+    color: #6495ED; }
+  main main a:active {
+    color: #DEB887; }
+  main main a:hover {
+    color: #6495ED;
+    text-decoration: underline; }
+  @media only screen and (min-width: 1022px) {
+    main {
+      width: 752px;
+      padding: 1px 75px; } }
+
+article {
+  background-color: #FFFFFF;
+  padding: 40px 30px;
+  margin: 30px 0;
+  box-shadow: 2px 3px 5px #b1b1b1; }
+  article div.post-date {
+    color: #777777;
+    font-weight: 500; }
+  article h2 a {
+    color: #000000; }
+  article h2 a:visited {
+    color: #000000; }
+  article h2 a:active {
+    color: #DEB887; }
+  article h2 a:hover {
+    color: #6495ED;
+    text-decoration: underline; }
+  @media only screen and (min-width: 1022px) {
+    article {
+      padding: 40px 45px;
+      margin: 50px 0; }
+      article h2 {
+        font-size: 180%;
+        margin-top: 10px; } }
+
+img {
+  width: 100%;
+  max-width: 255px;
+  margin-top: 70px; }
+  @media only screen and (min-width: 1022px) {
+    img {
+      margin: 70px 85px 0px 85px; } }
