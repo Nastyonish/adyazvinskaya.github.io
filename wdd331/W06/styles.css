@@ -1,0 +1,11 @@
+svg {
+    background: green;
+  }
+  path {
+    stroke: black;
+    stroke-width: 3;
+    fill:none
+  }
+  #cream path {
+    fill: pink;
+  }

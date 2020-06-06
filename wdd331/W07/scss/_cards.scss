@@ -1,0 +1,52 @@
+$num-columns : 8;
+$one-column : 100% / $num_columns;
+$loop-start: 1;
+$loop-end: $num-columns +1;
+$one-column: 12.5%;
+
+$pink: #FF7373;
+$green: #B3F36D;
+
+@mixin col($span-num) {
+flex: 0 0 $one-column * $span-num;
+}
+
+@mixin offset($offset-num) {
+margin-left: $one-column * $offset-num;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: space-between;
+    height: 100%;
+}
+
+.cell {
+      flex: 1;
+      text-align: center;
+}
+
+//make column classes 
+@for $index from $loop-start to $loop-end {
+    .col-#{$index} {
+        @include col($index);
+    }
+}
+   
+//make offset classes
+@for $index from $loop-start to $loop-end {
+    .offset-#{$index} {
+        @include offset($index);
+    }
+}
+
+.pink {
+    stroke: $pink;
+    fill: $pink;
+  }
+.green {
+    stroke: $green;
+    fill: $green;
+}
